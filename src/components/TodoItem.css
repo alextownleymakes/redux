@@ -1,11 +1,11 @@
 .todoItem {
     display: flex;
     align-items: center;
-    width: 80%;
+    width: 100%;
     background-color: #fff;
-    margin: 6px 4px;
+    margin: 6px 0;
     height: 40px;
-    border-radius: 12px;
+    border-radius: 20px;
 }
 
 .todoItem--done {
