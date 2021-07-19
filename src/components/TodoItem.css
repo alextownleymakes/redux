@@ -11,3 +11,8 @@
 .todoItem--done {
     text-decoration: line-through;
 }
+
+.trash {
+    box-sizing: unset;
+    margin-left: auto !important;
+}

@@ -19,8 +19,7 @@ function App() {
           {
             todoList.map(item => (
               <>
-              {/* {item.item} */}
-              <TodoItem name={item.item} done={item.done} id={item.id} />
+                {item.del === false && <TodoItem name={item.item} done={item.done} id={item.id} />}
               </>
             ))
           }

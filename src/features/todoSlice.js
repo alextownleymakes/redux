@@ -18,11 +18,19 @@ const todoSlice = createSlice({
                     item.done = !item.done
                 }
             })
+        },
+
+        setDel: (state, action) => {
+            state.todoList.map(item => {
+                if (action.payload === item.id) {
+                    item.del = !item.del
+                }
+            })
         }
     }
 });
 
-export const { saveTodo, setCheck } = todoSlice.actions;
+export const { saveTodo, setCheck, setDel } = todoSlice.actions;
 
 export const selectTodoList = state => state.todos.todoList;
 

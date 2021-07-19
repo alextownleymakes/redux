@@ -16,6 +16,7 @@ const Input = () => {
         dispatch(saveTodo({
             item: input,
             done: false,
+            del: false,
             id: Date.now()
         }));
 
